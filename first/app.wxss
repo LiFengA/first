@@ -1,0 +1,43 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+.user-order {
+	width:100%;
+	height:80rpx;
+	padding-left: 20rpx;
+	padding-top: 30rpx;
+	background-color: #ece6e6;
+}
+.user-journey {
+	float:left;
+	width:200rpx;
+	height:260rpx;
+	text-align: center;
+	margin-left:130rpx;
+	margin-top:100rpx;
+}
+.user-cargo {
+	float:left;
+	width:200rpx;
+	height:260rpx;
+	text-align: center;
+	margin-left:100rpx;
+	margin-top:100rpx;
+}
+.opt-journey {
+	margin-top:20rpx;
+}
+.opt-cargo {
+	margin-top:20rpx;
+}
+.userinfo-avatar{
+	border:1rpx red solid;
+}

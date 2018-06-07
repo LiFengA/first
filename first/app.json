@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/order/order_list",
+        "pages/publish/cargo/publish_cargo",
+        "pages/publish/journey/publish_journey"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "捎带脚",
+        "navigationBarTextStyle": "black"
+    }
+}

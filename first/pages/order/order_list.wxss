@@ -1,0 +1,33 @@
+/* pages/order/order_list.wxss */
+.order_title {
+	border-left: none;
+	border-right: none;
+	height: 60rpx;
+	background-color: #aaa;
+	padding-left: 10rpx;
+}
+.order_title_item {
+	display: block;
+	width: 16%;
+	font-size:35rpx;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	float: left;
+	text-align: center;
+	margin-top: 5rpx;
+}
+.order_title:first-child {
+	border-left: none;
+}
+.order_list {
+	font-size: 28rpx;
+}
+.order_item {
+	width: 100%;
+	height: 200rpx;
+	border-bottom: 1rpx gray solid;
+}
+.current {
+	color: red;
+}

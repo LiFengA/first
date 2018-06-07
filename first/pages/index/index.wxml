@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="click_avatar" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <view class="usermotto">
+        <view class="user-order" bindtap='click_my_order'>
+			<text>我的订单</text>
+		</view>
+		<view class="user-journey" bindtap='click_publish_journey'>
+			<image class="userinfo-avatar"></image>
+			<text class="opt-journey">发布行程</text>
+		</view>
+		<view class="user-cargo" bindtap='click_publish_cargo'>
+			<image class="userinfo-avatar"></image>
+			<text class="opt-cargo">发布订单</text>
+		</view>
+    </view>
+</view>

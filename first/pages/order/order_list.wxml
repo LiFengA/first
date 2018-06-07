@@ -1,0 +1,18 @@
+<view>
+	<view class='order_title'>
+		<view class="order_title_item {{listItemCurrent == 0 ? 'current':''}}" bindtap='click_order_titile' id='0'>全部</view>
+		<view class="order_title_item {{listItemCurrent == 1 ? 'current':''}}" bindtap='click_order_titile' id='1'>待支付</view>
+		<view class="order_title_item {{listItemCurrent == 2 ? 'current':''}}" bindtap='click_order_titile' id='2'>待取件</view>
+		<view class="order_title_item {{listItemCurrent == 3 ? 'current':''}}" bindtap='click_order_titile' id='3'>送件中</view>
+		<view class="order_title_item {{listItemCurrent == 4 ? 'current':''}}" bindtap='click_order_titile' id='4'>已送达</view>
+		<view class="order_title_item {{listItemCurrent == 5 ? 'current':''}}" bindtap='click_order_titile' id='5'>已取消</view>
+	</view>
+	<view class='order_list' wx:for='{{orders}}' wx:for-index='ind' wx:for-item='order'>
+		<view class='order_item'>
+			<view>订单编号：{{order.omId}}</view>
+			<view style='float:left;'>发件：{{order.senderProvince}}</view><view style='margin-left:10rpx;'>收件：				{{order.recipientProvince}}</view>
+			<view>捎货人：{{order.carrierName}}</view>
+			<view>物品信息：{{order.goodsName}} {{order.goodsType}} {{order.goodsWeight}}</view>
+		</view>
+	</view>
+</view>
